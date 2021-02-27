@@ -6,6 +6,7 @@
   "author": "romellem <romellem.git@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "dev": "rollup -c --watch",
     "build": "rollup -c"
   },
   "dependencies": {
