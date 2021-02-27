@@ -15,7 +15,8 @@
 				scroll-behavior: smooth;
 			}
 			html {
-				font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+				font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial,
+					sans-serif;
 				font-size: 18px;
 				line-height: 1.5;
 			}
@@ -28,6 +29,17 @@
 			main {
 				text-align: center;
 				padding: 0.5em;
+			}
+
+			blockquote {
+				margin: 1.2rem 0;
+				font-style: italic;
+				font-size: 0.8em;
+				color: grey;
+			}
+
+			h1 {
+				margin: 1.2rem 0;
 			}
 
 			#textarea-input {
@@ -59,20 +71,31 @@
 	</head>
 	<body>
 		<main>
-		<h1>Easy QR Codes</h1>
+			<h1>Easy QR Codes</h1>
 
-		<label for="textarea-input">Content to be turned into a QR Code:</label><br />
-		<textarea id="textarea-input"></textarea>
+			<blockquote>
+				No trackers, ads, or server-side processing.<br />
+				100% clientside&nbsp;JS.<br />
+				<a
+					href="https://github.com/romellem/easyqr-codes"
+					target="_blank"
+					rel="noopener noreferrer"
+					>View website source</a
+				>.
+			</blockquote>
 
-		<hr />
+			<label for="textarea-input">Content to be turned into a QR Code:</label><br />
+			<textarea id="textarea-input"></textarea>
 
-		<div id="qrcode-container">
-			<svg id="qrcode-svg">
-				<rect width="100%" height="100%" fill="#FFFFFF" stroke-width="0"></rect>
-				<path d="" fill="#000000" stroke-width="0"></path>
-			</svg>
-		</div>
-	</main>
+			<hr />
+
+			<div id="qrcode-container">
+				<svg id="qrcode-svg">
+					<rect width="100%" height="100%" fill="#FFFFFF" stroke-width="0"></rect>
+					<path d="" fill="#000000" stroke-width="0"></path>
+				</svg>
+			</div>
+		</main>
 
 		<script type="application/javascript" src="/main.bundle.js"></script>
 	</body>
